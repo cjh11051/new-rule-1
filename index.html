@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background: rgba(0, 0, 0, 0.3);
+  font-family: "Montserrat", sans-serif;
+}
+
+.card-group {
+  display: grid;
+  grid-template-row: repeat(3, 1fr);
+  justify-content: center;
+  grid-gap: 1em;
+  margin: 6em;
+  perspective: 1200px;
+  transform-style: preserve-3d;
+}
+.card-group .card {
+  width: 35em;
+  position: relative;
+  color: #020102;
+  padding: 2em 4em;
+  border-radius: 20px;
+  perspective-origin: bottom right;
+  transform: rotateX(8deg) rotateY(-34deg);
+  border-bottom: 8px solid rgba(0, 0, 0, 0.2);
+  border-right: 12px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.5);
+}
+.card-group .card:hover {
+  transform: rotateX(2deg) rotateY(-18deg) scale(1.05);
+  transition: transform ease-in-out 0.5s;
+  z-index: 2;
+  border-bottom: 7px solid rgba(0, 0, 0, 0.2);
+  border-right: 4px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.4);
+}
+.card-group .card:nth-of-type(1) {
+  background: #ffe8e3;
+}
+.card-group .card:nth-of-type(2) {
+  background: #635f82;
+}
+.card-group .card:nth-of-type(3) {
+  background: #ffcbcc;
+}
+    </style>
+  </head>
+  <body>
+<div class="card-group">
+   <div class="card">
+    <hi>첫번째 방송 규칙</h1>
+     <p>1. 무지성 뇌절 시비 절대 금지입니다.<br>2. 타스트리머 언급 제가 먼저 하기전에는 언급하지 말아주세요.</br>
+      </p>
+  </div>
+   <div class="card">
+    <hi>두번째 방송 규칙</h1>
+    <p>
+      3.시청자들간 친목 절대절대 금지입니다.<br>4.종교,정치등의 논란이 될만한 이슈 언급하지 말아주세요</br>
+      </p>
+  </div>
+   <div class="card">
+    <hi>세번째 방송 규칙</h1>
+    <p>
+      5.훈수,반말 등 예의 없이 행동하지 마세요.<br>6.스트리머와 기싸움 하지 마세요 이 갈리면 mbti 안맞는거니 나가시면 됩니다</br>
+      </p>
+  </div>
+</div>
+</body>
+</html>
